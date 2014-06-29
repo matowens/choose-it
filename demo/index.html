@@ -1,0 +1,87 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- build:css demo.min.css -->
+<link rel="stylesheet" type="text/css" href="../src/css/choose-it.css"></link>
+<!-- /build -->
+
+<!-- build:js demo.min.js --> 
+<script src="../src/js/choose-it.js"></script>
+<!-- /build -->
+
+<script>
+  jQuery(document).ready(function() {
+    jQuery('#choose-it').chooseIt();
+  });
+</script>
+
+<div id="choose-it">
+
+  <div id="slide-1" class="ci-slide">
+    <h2></h2>
+    <h3></h3>
+    <p></p>
+    <button class="left ci-nav" path="slide-2"></button>
+    <button class="right ci-nav" path="slide-solution-1"></button>
+  </div>
+
+  <div id="slide-2" class="ci-slide">
+    <h2></h2>
+    <h3></h3>
+    <p></p>
+    <div class="left ci-nav" path="slide-3"></div>
+    <div class="right ci-nav" path="slide-solution-1"></div>
+  </div>
+
+  <div id="slide-3" class="ci-slide">
+    <h2></h2>
+    <h3></h3>
+    <p></p>
+    <button class="left ci-nav" path="slide-solution-3"></button>
+    <button class="right ci-nav" path="slide-4"></button>
+  </div>
+
+  <div id="slide-4" class="ci-slide">
+    <h2></h2>
+    <h3></h3>
+    <p></p>
+    <div class="left ci-nav" path="slide-5"></div>
+    <div class="right ci-nav" path="slide-solution-2"></div>
+  </div>
+
+  <div id="slide-5" class="ci-slide">
+    <h2></h2>
+    <h3></h3>
+    <p></p>
+    <button class="left ci-nav" path="slide-6"></button>
+    <button class="right ci-nav" path="slide-solution-2"></button>
+  </div>
+
+  <div id="slide-6" class="ci-slide">
+    <h2></h2>
+    <h3></h3>
+    <p></p>
+    <button class="left ci-nav" path="slide-solution-3"></button>
+    <button class="right ci-nav" path="slide-solution-2"></button>
+  </div>
+
+  <div id="slide-solution-1" class="ci-slide">
+    <h2></h2>
+    <p></p>
+    <div></div>
+  </div>
+
+  <div id="slide-solution-2" class="ci-slide">
+    <h2></h2>
+    <p></p>
+    <div></div>
+  </div>
+
+  <div id="slide-solution-3" class="ci-slide">
+    <h2></h2>
+    <p></p>
+    <div></div>
+  </div>
+
+  <div class="clear"></div>
+
+</div><!-- Close choose-it container. -->
