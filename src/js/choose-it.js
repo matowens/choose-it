@@ -6,14 +6,14 @@
         var settings = $.extend({
             initSlide: 'slide-1',
             navClass: 'ci-nav',
-            slideIdentifier: 'ci-slide'
+            slideClass: 'ci-slide'
         }, options);
 
         var showNextSlide = function() {
 
             var action = $(this);
 
-            action.parent('.' + settings.slideIdentifier).fadeOut('fast', function() {
+            action.parent('.' + settings.slideClass).fadeOut('fast', function() {
                 $(this).siblings('#' + action.attr('path')).fadeIn('slow');
             });
         };
@@ -22,7 +22,7 @@
 
             var thisSlide = $(this);
 
-            thisSlide.children('.' + settings.slideIdentifier).each(function() {
+            thisSlide.children('.' + settings.slideClass).each(function() {
                 $(this).children('.' + settings.navClass).click( showNextSlide );
             }).hide();
 
