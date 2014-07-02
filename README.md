@@ -64,8 +64,6 @@ Within your slides, you can add any number of buttons, divs or other elements th
         <button class="ci-nav" path="slide-3">Move to slide 3...</button>
     </div>
 
-
-
 Advanced Usage
 ==============
 
@@ -85,10 +83,25 @@ Definitions
 
 ###Options
 
-#####initSlide
+- **initSlide**
 
-#####navClass
+- **navClass**
 
-#####slideClass
+- **slideClass**
 
 ###Styles
+
+Very basic styles are provided to give you a foundation to build on, or if you'd like, a very minimalistic theme.
+
+- **wrapper** - the de
+    - *#choose-it*
+
+- **slides**
+    - *.ci-slide*
+
+- **slide nav**
+    - *.ci-nav*
+
+- **nav position**: if you would like to position any of your buttons to the left or ride of a slide, apply the appropriate class to those buttons.  Helpful for forward, backward or sequential type slides.
+    - *.left*
+    - *.right*
