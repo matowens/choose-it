@@ -1,7 +1,7 @@
 ChooseIt
 =========
 
-A super simple jQuery plugin that helps you create a CYOA (Choose Your Own Adventure) interactive slider.
+A super simple jQuery plugin that helps you create a CYOA (Choose Your Own Adventure) interactive sliders.
 
 Great for building out choose your own adventure stories, troubleshooting guides, quick presentations and more.
 
@@ -24,15 +24,15 @@ You can also download source files straight from this repo, they're located in t
 
 After including *choose-it.min.css* and *choose-it.min.js*, invoke the choose-it plugin on your slider's container element.
 
-    jQuery('#choose-it').chooseIt();
+    jQuery('#ci').chooseIt();
 
 ###Structure
 
 #####Container
 
-Your slider should be contained within a div and that div have a unique ID.  In our case, we'll use `choose-it`.
+Your slider should be contained within a div and that div have a unique ID.  In our case, we'll use `ci`.
 
-    <div id="choose-it">
+    <div id="ci">
 
     </div>
 
@@ -71,7 +71,7 @@ Advanced Usage
 
 You can override a few of the default options by passing them through when you invoke the choose-it plugin. (For available options, check the [definitions](#definitions) below.)
 
-    jQuery('#choose-it').chooseIt({
+    jQuery('#ci').chooseIt({
         initSlide: 'slide-1',
         navClass: 'ci-nav',
         slideClass: 'ci-slide'
@@ -94,7 +94,7 @@ Definitions
 Very basic styles are provided to give you a foundation to build on, or if you'd like, a very minimalistic theme.
 
 - **wrapper** - the de
-    - *#choose-it*
+    - *#ci*
 
 - **slides**
     - *.ci-slide*
