@@ -1,82 +1,131 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro|Open+Sans' rel='stylesheet' type='text/css'>
 
 <!-- build:css demo.min.css -->
 <link rel="stylesheet" type="text/css" href="../src/css/choose-it.css"></link>
 <!-- /build -->
+
+<div class="header">
+    <h1>choose-it</h1>
+    <h2>A super simple jQuery plugin to create your own CYOA (Choose Your Own Adventure) interactive sliders.</h2>
+</div>
+
+<div class="main">
+
+    <h3>vitals</h3>
+    <ul class="clean">
+        <li>version<br>v0.1.0</li>
+    </ul>
+    <ul class="clean">
+        <li>total size<br>under 1 kB</li>
+    </ul>
+    <ul class="clean">
+        <li>files<br>choose-it.min.js - 460 bytes<br>choose-it.min.css - 266 bytes</li>
+    </ul>
+    <ul class="clean">
+        <li>support<br>depends on your <a href="http://jquery.com/browser-support/">jQuery version</a><br>either way, all modern browsers</li>
+    </ul>
+
+    <span class="spacer"></span>
+    <h3>demo</h3>
+
+    <div id="ci-wrap">
+        <div id="ci">
+
+            <div id="slide-1" class="ci-slide">
+                <h2>A Choose-It Demo</h2>
+                <p>An example of what you can do with this little plugin.</p>
+                <button class="ci-nav" path="slide-2">Let's Go!</button>
+            </div>
+
+            <div id="slide-2" class="ci-slide">
+                <h2 class="clear">Custom Content</h2>
+                <p>You can add any type of content to your slide, it's just HTML.</p>
+                <p><img src="img/clint-eastwood-agrees.gif"></p>
+                <button class="ci-nav" path="slide-1">Back</button>
+                <button class="ci-nav" path="slide-3">Next</button>
+            </div>
+
+            <div id="slide-3" class="ci-slide">
+                <h2>Loads of Buttons</h2>
+                <p>You can have as many buttons as you'd like that direct the user to any slide you want!</p>
+                <button class="ci-nav" path="slide-1">Slide 1</button>
+                <button class="ci-nav" path="slide-2">Slide 2</button>
+                <button class="ci-nav" path="slide-4">Truffle Shuffle</button>
+                <button class="ci-nav" path="slide-5">Hypno-what?</button>
+                <button class="ci-nav" path="slide-6">Next Slide</button>
+            </div>
+
+            <div id="slide-4" class="ci-slide">
+                <h2>Do the Truffle Shuffle</h2>
+                <p><img src="img/truffle-shuffle.gif"></p>
+                <button class="ci-nav" path="slide-3">Go Back</button>
+            </div>
+
+            <div id="slide-5" class="ci-slide">
+                <p><img src="img/hypnotoad.gif"></p>
+                <button class="ci-nav" path="slide-3">Previous Slide</button>
+            </div>
+
+            <div id="slide-6" class="ci-slide">
+                <h2>Buttons Without Limits</h2>
+                <p>You can even use divs full of HTML as your buttons.</p>
+                <div class="left ci-nav" path="slide-3">Go this way...<br><img src="img/left.gif"></div>
+                <div class="right ci-nav" path="slide-7">No, go this way...<br><img src="img/right.gif"></div>
+                <div class="clear"></div>
+            </div>
+
+            <div id="slide-7" class="ci-slide">
+                <h2>Uses</h2>
+                <p>
+                    You can use this plugin to display all kinds of things, things like:
+                    <ul>
+                        <li>Troubleshooting guides for your users</li>
+                        <li>Choose your own adventure stories</li>
+                        <li>Interactive presentations/slide decks</li>
+                        <li>Tutorials and more...</li>
+                    </ul>
+                </p>
+                <button class="ci-nav" path="slide-last">Last Slide >></button>
+            </div>
+
+            <div id="slide-last" class="ci-slide">
+                <h2>The End!</h2>
+                <p>Head over to the <a href="https://github.com/matowens/choose-it">git repo</a> to get started on your own CYOA slider!</p>
+                <button class="ci-nav" path="slide-1">Start Over?</button>
+            </div>
+        </div>
+    </div>
+
+    <span class="spacer"></div>
+
+    <h3>customize</h3>
+    <p>Head over to the <a href="https://github.com/matowens/choose-it#configuration">git repo</a> for instructions on how to override default options and styles.</p>
+
+    <span class="spacer"></span>
+
+    <h3>share</h3>
+
+    <ul class="clean">
+        <li class="git-share"><a href="https://github.com/matowens/choose-it" class="github-button" data-icon="octicon-star" data-count-href="/matowens/choose-it/stargazers" data-count-api="/repos/matowens/choose-it#stargazers_count">Star</a><script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script></li>
+        <li class="twit-share"><a href="https://twitter.com/share" class="twitter-share-button" data-text="choose-it: A super simple #jQuery plugin to create your own CYOA (Choose Your Own Adventure) interactive sliders." data-via="TheMatOwens" data-hashtags="angularjs">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+    </ul>
+
+    <span class="spacer"></span>
+
+    <h3>contact</h3>
+    <p>Have any ideas or feedback?  Shoot me a message: <a href="http://matowens.com/contact">matowens.com/contact</a>
+
+    <div class="foot"></div>
+
+</div>
 
 <!-- build:js demo.min.js --> 
 <script src="../src/js/choose-it.js"></script>
 <!-- /build -->
 
 <script>
-  jQuery(document).ready(function() {
-    jQuery('#ci').chooseIt();
-  });
+    jQuery(document).ready(function() {
+        jQuery('#ci').chooseIt();
+    });
 </script>
-
-<div id="ci">
-
-  <div id="slide-1" class="ci-slide">
-    <h2>A CYOA Demo: Troubleshooting Guide</h2>
-    <p>An example of what you can do with this little plugin.</p>
-    <button class="ci-nav" path="slide-2">Let's Go!</button>
-  </div>
-
-  <div id="slide-2" class="ci-slide">
-    <h2 class="clear">Custom Content</h2>
-    <p>You can add any type of content to your slide, it's just HTML.</p>
-    <p><img src="img/clint-eastwood-agrees.gif"></p>
-    <button class="ci-nav" path="slide-1">Back</button>
-    <button class="ci-nav" path="slide-3">Next</button>
-  </div>
-
-  <div id="slide-3" class="ci-slide">
-    <h2>Limitless Buttons</h2>
-    <p>You can have as many buttons as you'd like that direct the user to any slide you want!</p>
-    <button class="ci-nav" path="slide-1">Slide 1</button>
-    <button class="ci-nav" path="slide-2">Slide 2</button>
-    <button class="ci-nav" path="slide-4">Truffle Shuffle</button>
-    <button class="ci-nav" path="slide-5">Hypno-what?</button>
-    <button class="ci-nav" path="slide-last">Skip to End</button>
-  </div>
-
-  <div id="slide-4" class="ci-slide">
-    <h2>Do the Truffle Shuffle</h2>
-    <p><img src="img/truffle-shuffle.gif"></p>
-    <button class="ci-nav" path="slide-3">Go Back</button>
-  </div>
-
-  <div id="slide-5" class="ci-slide">
-    <p><img src="img/hypnotoad.gif"></p>
-    <button class="ci-nav" path="slide-3">Previous Slide</button>
-  </div>
-
-  <div id="slide-6" class="ci-slide">
-    <h2></h2>
-    <h3></h3>
-    <p></p>
-    <button class="left ci-nav" path="slide-solution-3"></button>
-    <button class="right ci-nav" path="slide-solution-2"></button>
-  </div>
-
-  <div id="slide-solution-1" class="ci-slide">
-    <h2></h2>
-    <p></p>
-    <div></div>
-  </div>
-
-  <div id="slide-solution-2" class="ci-slide">
-    <h2></h2>
-    <p></p>
-    <div></div>
-  </div>
-
-  <div id="slide-last" class="ci-slide">
-    <h2>The End!</h2>
-    <p>Head over to the <a href="https://github.com/matowens/choose-it">git repo</a> to get started on your own CYOA slider!</p>
-    <button class="ci-nav" path="slide-1">Start Over?</button>
-  </div>
-
-  <div class="clear"></div>
-
-</div><!-- Close choose-it container. -->

@@ -1,5 +1,24 @@
-html {
-    font-family: sans-serif;
+html, body {
+    background: #EFEFEF;
+    color: #222;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+/* Structure and Default */
+
+.header {
+    background: #0e90d2;
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+    margin: 0;
+    padding: 75px 0 100px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(10, 10, 10, 0.1);
+}
+
+.main {
+    border-top: 1px solid #AAA;
 }
 
 img {
@@ -12,6 +31,46 @@ img {
     padding: 25px;
 }
 
+#ci-wrap {
+    background: #FFF;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+#ci p {
+    margin: 15px auto;
+}
+
+h1 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 100;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+#ci h2 {
+    font-weight: bold;
+}
+
+h3 {
+    cursor: default;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+p {
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
 a {
     color: #0e90d2;
     text-decoration: none;
@@ -21,6 +80,48 @@ a:hover {
     animation: mowens-color 150ms linear infinite;
     -moz-animation: mowens-color 150ms linear infinite;
     -webkit-animation: mowens-color 150ms linear infinite;
+}
+
+#ci ul {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+
+#ci li {
+    text-align: left;
+}
+
+ul.clean {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.clean li {
+    display: inline-block;
+}  
+
+.spacer {
+    display: block;
+    max-width: 200px;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #DDD;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.foot {
+    margin-bottom: 200px;
+}
+
+.git-share {
+    margin-right: 5px
+}
+
+.twit-share {
+    margin-left: 10px;
+    width: 95px;
 }
 
 @-webkit-keyframes mowens-color{0%{color:red}15%{color:#ff0}25%{color:orange}35%{color:#00f}50%{color:green}65%{color:#000}75%{color:red}85%{color:#fff}100%{color:#00f}}
