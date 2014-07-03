@@ -1,0 +1,28 @@
+html {
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+#ci {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 25px;
+}
+
+a {
+    color: #0e90d2;
+    text-decoration: none;
+}
+
+a:hover {
+    animation: mowens-color 150ms linear infinite;
+    -moz-animation: mowens-color 150ms linear infinite;
+    -webkit-animation: mowens-color 150ms linear infinite;
+}
+
+@-webkit-keyframes mowens-color{0%{color:red}15%{color:#ff0}25%{color:orange}35%{color:#00f}50%{color:green}65%{color:#000}75%{color:red}85%{color:#fff}100%{color:#00f}}
+@-moz-keyframes mowens-color{0%{color:red}15%{color:#ff0}25%{color:orange}35%{color:#00f}50%{color:green}65%{color:#000}75%{color:red}85%{color:#fff}100%{color:#00f}}
+@keyframes mowens-color{0%{color:red}15%{color:#ff0}25%{color:orange}35%{color:#00f}50%{color:green}65%{color:#000}75%{color:red}85%{color:#fff}100%{color:#00f}}

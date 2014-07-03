@@ -1,13 +1,13 @@
-#choose-it {
+#ci {
   background: #eeeeee;
   padding: 20px 30px; }
 
 /* Prevent flicker while loading - start with everything hidden. */
-#choose-it .ci-slide {
+#ci .ci-slide {
   display: none;
   text-align: center; }
 
-#choose-it .ci-nav {
+#ci .ci-nav {
   background: #0f75bc;
   border: none;
   color: white;
@@ -16,11 +16,11 @@
   max-width: 40%;
   padding: 10px 15px; }
 
-#choose-it .left {
+#ci .left {
   float: left; }
 
-#choose-it .right {
+#ci .right {
   float: right; }
 
-#choose-it .clear {
+#ci .clear {
   clear: both; }

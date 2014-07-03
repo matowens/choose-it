@@ -10,50 +10,45 @@
 
 <script>
   jQuery(document).ready(function() {
-    jQuery('#choose-it').chooseIt();
+    jQuery('#ci').chooseIt();
   });
 </script>
 
-<div id="choose-it">
+<div id="ci">
 
   <div id="slide-1" class="ci-slide">
-    <h2></h2>
-    <h3></h3>
-    <p></p>
-    <button class="left ci-nav" path="slide-2"></button>
-    <button class="right ci-nav" path="slide-solution-1"></button>
+    <h2>A CYOA Demo: Troubleshooting Guide</h2>
+    <p>An example of what you can do with this little plugin.</p>
+    <button class="ci-nav" path="slide-2">Let's Go!</button>
   </div>
 
   <div id="slide-2" class="ci-slide">
-    <h2></h2>
-    <h3></h3>
-    <p></p>
-    <div class="left ci-nav" path="slide-3"></div>
-    <div class="right ci-nav" path="slide-solution-1"></div>
+    <h2 class="clear">Custom Content</h2>
+    <p>You can add any type of content to your slide, it's just HTML.</p>
+    <p><img src="img/clint-eastwood-agrees.gif"></p>
+    <button class="ci-nav" path="slide-1">Back</button>
+    <button class="ci-nav" path="slide-3">Next</button>
   </div>
 
   <div id="slide-3" class="ci-slide">
-    <h2></h2>
-    <h3></h3>
-    <p></p>
-    <button class="left ci-nav" path="slide-solution-3"></button>
-    <button class="right ci-nav" path="slide-4"></button>
+    <h2>Limitless Buttons</h2>
+    <p>You can have as many buttons as you'd like that direct the user to any slide you want!</p>
+    <button class="ci-nav" path="slide-1">Slide 1</button>
+    <button class="ci-nav" path="slide-2">Slide 2</button>
+    <button class="ci-nav" path="slide-4">Truffle Shuffle</button>
+    <button class="ci-nav" path="slide-5">Hypno-what?</button>
+    <button class="ci-nav" path="slide-last">Skip to End</button>
   </div>
 
   <div id="slide-4" class="ci-slide">
-    <h2></h2>
-    <h3></h3>
-    <p></p>
-    <div class="left ci-nav" path="slide-5"></div>
-    <div class="right ci-nav" path="slide-solution-2"></div>
+    <h2>Do the Truffle Shuffle</h2>
+    <p><img src="img/truffle-shuffle.gif"></p>
+    <button class="ci-nav" path="slide-3">Go Back</button>
   </div>
 
   <div id="slide-5" class="ci-slide">
-    <h2></h2>
-    <h3></h3>
-    <p></p>
-    <button class="left ci-nav" path="slide-6"></button>
-    <button class="right ci-nav" path="slide-solution-2"></button>
+    <p><img src="img/hypnotoad.gif"></p>
+    <button class="ci-nav" path="slide-3">Previous Slide</button>
   </div>
 
   <div id="slide-6" class="ci-slide">
@@ -76,10 +71,10 @@
     <div></div>
   </div>
 
-  <div id="slide-solution-3" class="ci-slide">
-    <h2></h2>
-    <p></p>
-    <div></div>
+  <div id="slide-last" class="ci-slide">
+    <h2>The End!</h2>
+    <p>Head over to the <a href="https://github.com/matowens/choose-it">git repo</a> to get started on your own CYOA slider!</p>
+    <button class="ci-nav" path="slide-1">Start Over?</button>
   </div>
 
   <div class="clear"></div>
