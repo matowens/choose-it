@@ -9,6 +9,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-processhtml');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-notify');
 
     grunt.initConfig({
 
@@ -91,6 +92,15 @@ module.exports = function(grunt) {
                 files: ['src/**/*', 'demo/**/*'],
                 tasks: ['build']
             }
+        },
+
+        notify: {
+            done: {
+                options: {
+                    title: 'Build Complete',
+                    message: 'Alll done... refresh for changes!'
+                }
+            }
         }
 
     });
@@ -109,7 +119,8 @@ module.exports = function(grunt) {
         'sass',
         'cssmin:build',
         'uglify:build',
-        'demo'
+        'demo',
+        'notify:done'
     ]);
 
     grunt.registerTask('demo', [
