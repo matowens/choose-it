@@ -1,7 +1,7 @@
 {
   "name": "choose-it",
   "version": "0.1.0",
-  "description": "A super simple jQuery plugin to create your own CYOA (Choose Your Own Adventure) interactive slider.",
+  "description": "A super simple jQuery plugin to create your own CYOA (Choose Your Own Adventure) interactive sliders.",
   "main": "dist/choose-it.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
