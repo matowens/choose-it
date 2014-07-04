@@ -85,11 +85,11 @@ Definitions
 
 ###Options
 
-- **initSlide** - *string* - the ID of the first slide that will display.  *this is set to `slide-1` by default*
+- **initSlide** - *string* - the ID of the first slide that will display.  *(This is set to `slide-1` by default.)*
 
-- **navClass** - *string* - the class that identifies navigation items throughout your slider.  *this is set to `ci-nav` by default*
+- **navClass** - *string* - the class that identifies navigation items throughout your slider.  *(This is set to `ci-nav` by default.)*
 
-- **slideClass** - *string* - the class that identifies all slides throughout your slider.  *this is set to `ci-slide` by default*
+- **slideClass** - *string* - the class that identifies all slides throughout your slider.  *(This is set to `ci-slide` by default.)*
 
 ###Styles
 
@@ -104,6 +104,7 @@ Very basic styles are provided to give you a foundation to build on, or if you'd
 - **slide nav** - targets all of our nav buttons and applies a few minimal styles like background color and padding.
     - *.ci-nav*
 
-- **nav position**: if you would like to position any of your buttons to the left or ride of a slide, apply the appropriate class to those buttons.  Helpful for forward, backward or sequential type slides.  *By default, buttons will all be center aligned.*
+- **nav position**: if you would like to position any of your buttons to the left or ride of a slide, apply the appropriate class to those buttons.  Helpful for forward, backward or sequential type slides.  *(By default, buttons will all be center aligned.)*
     - *.left*
     - *.right*
+    
