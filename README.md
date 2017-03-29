@@ -12,25 +12,25 @@ You can check out the demo here: [http://matowens.github.io/choose-it](http://ma
 Implementation
 ==============
 
-###Requirements
+### Requirements
 
 Being a jQuery plugin, jQuery is required inorder for this to function.
 
-###Installation
+### Installation
 
 // Bower coming soon...
 
 You can also download source files straight from this repo, they're located in the `dist` dir.  Just include the minified version of both the js and css files.
 
-###Usage
+### Usage
 
 After including *choose-it.min.css* and *choose-it.min.js*, invoke the choose-it plugin on your slider's container.
 
     jQuery('#ci').chooseIt();
 
-###Structure
+### Structure
 
-#####Container
+##### Container
 
 Your slider should be contained within a tag, most likely a div, and you should have some way of identifying that tag with jQUery.  In our case, we'll use a div and give it an ID of `ci`.
 
@@ -38,7 +38,7 @@ Your slider should be contained within a tag, most likely a div, and you should 
 
     </div>
 
-#####Slides
+##### Slides
 
 Now build out each slide within your container and add any content you'd like.  Each slide should have it's own unique ID; this will be used to trigger that particular slide when referenced.  (By default, the slide with ID of *slide-1* will be the first slide loaded up but that can be overriden, see [configuration](#configuration) below.)  Each slide should also have the `ci-slide` class assigned to it. (*ci-slide* is the default slide identifier but can be overriden as well, see [configuration](#configuration) below.)
 
@@ -50,7 +50,7 @@ Now build out each slide within your container and add any content you'd like.  
         // More content here...
     </div>
 
-#####Navigation
+##### Navigation
 
 Within your slides, you can add any number of buttons, divs or other tags that point to any of your slides.  Our buttons should all have the `ci-nav` class and must also contain a path attribute that references the ID of the slide it should trigger. (*ci-nav* is the default nav identifier but can be overriden, see [configuration](#configuration) below.)
     
@@ -69,7 +69,7 @@ Within your slides, you can add any number of buttons, divs or other tags that p
 Advanced Usage
 ==============
 
-###Configuration
+### Configuration
 
 You can override a few of the default options when you invoke the choose-it plugin. (For available options, check the [definitions](#definitions) below.)
 
@@ -83,7 +83,7 @@ You can override a few of the default options when you invoke the choose-it plug
 Definitions
 ===========
 
-###Options
+### Options
 
 - **initSlide** - *string* - the ID of the first slide that will display.  *(This is set to `slide-1` by default.)*
 
@@ -91,7 +91,7 @@ Definitions
 
 - **slideClass** - *string* - the class that identifies all slides throughout your slider.  *(This is set to `ci-slide` by default.)*
 
-###Styles
+### Styles
 
 Very basic styles are provided to give you a foundation to build on, or if you'd like, a very minimalistic theme.
 
